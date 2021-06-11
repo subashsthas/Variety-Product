@@ -1,0 +1,29 @@
+
+{% extends 'main/header.html' %}
+{% block content %}
+{% load static %}
+<title>{{product.product_name}}</title>
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <img src="/media/{{product.product_image}}" width="233px" height="385px" alt="{{product.product_name}}">
+            </div>
+            <div class="row">
+                <button class="btn btn-primary mx-3">Buy Now</button>
+                <button class="btn btn-primary cart" id="pr{{i.product_name}}">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <h5>{{product.product_name}}</h5>
+            <p><b>Price per {{product.unit_Of_Product}}: {{product.product_rate}} </b></p>
+            <p>{{product.product_details}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

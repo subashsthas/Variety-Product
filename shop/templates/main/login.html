@@ -1,0 +1,46 @@
+{% extends 'main/header.html' %}
+{% block content %}
+{% load static %}
+<style>
+    body{
+        background-image: url({% static 'background/login.jpg' %});
+        background-position:  center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+    }
+    .form-group form input,.form-group{
+        width:90%;
+    }
+    .form-group input{
+        border-radius: 15px;
+    }
+    .login{
+        border-style: solid dashed solid double;
+	    background: #f0c391;
+    }
+    form{
+        padding-left: 9;
+    }
+    label{
+        font-weight:900;
+    }
+
+</style>
+<title>Login Form</title>
+<br>
+<div class="form-group">
+    <div class="container col-md-3">
+        <div class="login">
+            <h1 align="center">Login</h1>
+            <hr>
+            <br>
+            <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <h5 align="center"><button type="submit" style="background-color: black; color: white">Login</button></h5>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

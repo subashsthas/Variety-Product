@@ -1,0 +1,94 @@
+<!--{% extends 'header.html'%}-->
+<!--{%block contents%}-->
+<!--<style>-->
+<!--.ui-w-40 {-->
+<!--    width: 40px !important;-->
+<!--    height: auto;-->
+<!--}-->
+
+<!--.card{-->
+<!--    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);-->
+<!--}-->
+
+<!--.ui-product-color {-->
+<!--    display: inline-block;-->
+<!--    overflow: hidden;-->
+<!--    margin: .144em;-->
+<!--    width: .875rem;-->
+<!--    height: .875rem;-->
+<!--    border-radius: 10rem;-->
+<!--    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;-->
+<!--    box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;-->
+<!--    vertical-align: middle;-->
+<!--}-->
+<!--</style>-->
+<!--{%endblock%}-->
+<!--{% block content %}-->
+<!--<div class="container px-3 my-5 clearfix">-->
+<!--    &lt;!&ndash; Shopping cart table &ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-header">-->
+<!--            <h2>Shopping Cart</h2>-->
+<!--        </div>-->
+<!--        <div class="card-body">-->
+<!--            <div class="table-responsive">-->
+<!--              <table class="table table-bordered m-0">-->
+<!--                <thead>-->
+<!--                  <tr>-->
+<!--                    &lt;!&ndash; Set columns width &ndash;&gt;-->
+<!--                    <th class="text-center py-3 px-4" style="min-width: 400px;">Product Name</th>-->
+<!--                    <th class="text-right py-3 px-4" style="width: 100px;">Price</th>-->
+
+<!--                    <th class="text-center align-middle py-3 px-0" style="width: 40px;"><a href="#" class="shop-tooltip float-none text-light" title="" data-original-title="Clear cart"><i class="ino ion-md-trash"></i></a></th>-->
+<!--                  </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                {% for i in order.get_cart_items %}-->
+<!--                  <tr>-->
+<!--                    <td class="p-4">-->
+<!--                      <div class="media align-items-center">-->
+<!--                        <img src="{{x.products.img.url}}" class="d-block ui-w-40 ui-bordered mr-4" alt="">-->
+<!--                        <div class="media-body">-->
+<!--                          <a href="#" class="d-block text-dark">{{i.Product.product_name}}</a>-->
+
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </td>-->
+<!--                    <td class="text-right font-weight-semibold align-middle p-4">{{i.Product.product_rate}}</td>-->
+
+
+<!--                    <td class="text-center align-middle px-0"><a href="delete/{{x.id}}" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">i</a></td>-->
+<!--                  </tr>-->
+<!--                {% endfor %}-->
+<!--                </tbody>-->
+<!--              </table>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; / Shopping cart table &ndash;&gt;-->
+
+<!--            <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">-->
+<!--              <div class="mt-4">-->
+<!--                <label class="text-muted font-weight-normal">Promocode</label>-->
+<!--                <input type="text" placeholder="SUBASH" class="form-control">-->
+<!--              </div>-->
+
+<!--              <div class="d-flex">-->
+
+<!--                <div class="text-right mt-4">-->
+<!--                  <label class="text-muted font-weight-normal m-0">Total price</label>-->
+<!--                  {% if order.get_cart_total != None %}-->
+<!--                  <div class="text-large"><strong>{{ order.get_cart_total }}</strong></div>-->
+<!--                  {% endif %}-->
+<!--                </div>-->
+
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="float-right">-->
+<!--              <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3"><a href="{% url 'index'  %}">Back to shopping</a></button>-->
+<!--              <button type="button" class="btn btn-lg btn-primary mt-2">Checkout</button>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--{% endblock %}-->

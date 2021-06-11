@@ -1,0 +1,75 @@
+{% extends 'main/header.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <title>About Us</title>
+    <style>
+        .terms{
+            color:black;
+        }
+        .heading-agileinfo{
+           text-align: center;
+           color: black;
+           margin-top: 30px;
+           font-size: 50px;}
+
+        .heading-agileinfo span{
+           color:#d82a4e;}
+
+        .address-right{
+           color: black;
+           display: inline-block;
+           margin-left: 200px;}
+
+        .address-right p{
+           margin:2px;}
+
+        .address-right i{
+           color: #d82a4e;
+           font-size: 30px;}
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <a href="/" style=" padding-left: 37%;"><img src="{% static 'logo.jpg' %}" alt="logo" height="150pt" width="300pt"></a>
+        </div>
+        <br>
+        <div class="line">
+        <main class="develope">
+        <p style="margin:30px;">This is the official site of Variety Product where you can buy paper product like budget sheet, practicle file, expenditure file,etc
+        in wholesale rate. You can order from any part of the Nepal and we can deliver it to you in your shop as fast as possible. You have to provide us with your
+        full information asked in the site. You just have to create your account and provide us some needed information and the product will be in your door.
+        To find our main office you can visit <b>Bhotahity, Kathmandu Nepal</b> or call us at <b>+977 9861590528</b></p>
+        </main>
+        </div>
+        <hr>
+        <div style="padding-left:600px;">
+            <h1>Terms and Condition</h1>
+            <a href="{% static 'terms_and_condition.pdf' %}" class="terms" ><button>Download Terms and Condition</button></a>
+        </div>
+        <section class="banner-bottom">
+            <h1 class="heading-agileinfo">GET IN <span> TOUCH</span></h1>
+            <div class="address-right ">
+                <h5 class="ad-info "><a href="#"><i class="material-icons">insert_chart</i></a>ADDRESS</h5>
+                <p>Bhotahity, Kathmandu Nepal</p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="address-right ">
+                <h5 class="ad-info"><a href="#"><i class="material-icons">insert_chart</i></a>PHONE</h5>
+                <p>+977 9861590528</p>
+            </div>
+            <div class="address-right ">
+                <h5 class="ad-info"><a href="#"><i class="material-icons">insert_chart</i></a>PHONE</h5>
+                <p>01-4243820</p>
+            </div>
+
+
+        </section>
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'main/header.html' %}
+{% block content %}
+{% load static %}
+<title>View Products</title>
+<h1 align="center">ADMIN PAGE</h1>
+<table class="table table-hover">
+<thead>
+	<tr>
+		<th scope="col">product_id</th>
+		<th scope="col">product_name</th>
+		<th scope="col">product_image</th>
+		<th scope="col">product_category </th>
+        <th scope="col">unit_Of_Product</th>
+        <th scope="col">product_rate</th>
+        <th scope="col">product_details</th>
+	</tr>
+</thead>
+<tbody>
+	{% for product in products %}
+	<tr>
+		<td>{{product.product_id}}</td>
+		<td>{{product.product_name}}</td>
+        <td>{{product.product_image}}</td>
+        <td>{{product.product_category}}</td>
+        <td>{{product.unit_Of_Product}}</td>
+        <td>{{product.product_rate}}</td>
+        <td>{{product.product_details}}</td>
+		<td>
+			<form method="POST" action="{% url 'main:delete_product' product.pk%}">
+				{% csrf_token %}
+		    <button type="submit" class="btn btn-primary btn-sm">Delete</button>
+			</form>
+		</td>
+	</tr>
+	{% endfor %}
+</tbody>
+</table>
+<div class="pagination">
+	<ul>
+		{% if products.has_previous %}
+			<li><a href="?page={{products.previous_page_number}}">Previous</a></li>
+		{% endif %}
+		{% for pg in products.paginator.page_range %}
+			{% if products.number == pg %}
+				<li class="active"><a href="?page={{ pg }}" > {{ pg }}</a></li>
+			{% else %}
+				<li><a href="?page={{ pg }}" > {{ pg }}</a></li>
+		{% endif %}
+		{% endfor %}
+		{% if products.has_next %}
+			<li><a href="?page={{ products.next_page_number}}">Next</a></li>
+		{% endif %}
+	</ul>
+</div>
+
+<h5 align="center"><button><a href="/crud">Add New Produts</a></button></h5>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'main/header.html' %}
+{% load static %}
+{% block content %}
+<style>
+    body{
+        background-image: url({% static 'background/info.jpg' %});
+        background-position:  center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+    }
+    .form-group input{
+        border-radius: 15px;
+    }
+    .form-group form input{
+        width:98%;
+    }
+    .info{
+        border-style: solid dashed solid double;
+	    background:#499D9E;
+    }
+    label{
+        font-weight:900;
+    }
+</style>
+<div class="form-group">
+    <div class="container col-md-5">
+        <div class="info">
+            <form method = "POST" enctype="multipart/form-data" class="container">
+                <h2 align="center">Please Provide More Information About You</h2>
+                <hr>
+                {% csrf_token %}
+                {{form.as_p}}
+                <h5 align="center"><button type="submit" style="background-color: black; color: white " >Submit</button></h5>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

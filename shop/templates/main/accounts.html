@@ -1,0 +1,71 @@
+{% extends 'main/header.html' %}
+{% block content %}
+{% load static %}
+
+<title>Your Profile</title>
+<figure class="figure">
+  <img src="{{user.customer.customer_shopPic.url}}" class="rounded w-100" alt="pp">
+  <figcaption class="figure-caption text-right"><button type="submit"  class="btn btn-secondary"><a href= "{% url 'main:update_customer' user.customer.pk %}">Update Info</a></button></figcaption>
+</figure>
+<br>
+<table class="table">
+  <tbody>
+    <tr>
+      <th scope="row"><u>YOUR DETAIL INFORMATION</u></th>
+    </tr>
+    <tr>
+      <th scope="row">Your Username</th>
+      <td>{{user.username}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Your Email</th>
+      <td>{{user.email}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Your Shop Name</th>
+      <td>{{user.customer.customer_shopName}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Your Address</th>
+      <td>{{user.customer.customer_address}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Pan</th>
+        <td>{{user.customer.customer_Pan}}</td>
+    </tr>
+    <tr>
+        <th scope="row">District</th>
+        <td>{{user.customer.customer_district}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Proporator</th>
+        <td>{{user.customer.customer_proporator}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Proporator Mobile Number</th>
+        <td>{{user.customer.customer_proporatorMobile}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Contact Person</th>
+        <td>{{user.customer.customer_contactPerson}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Contact Person Mobile Number </th>
+        <td>{{user.customer.customer_contactPersonMobile}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Shop Number</th>
+        <td>{{user.customer.customer_shopNumber}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Resident Phone</th>
+        <td>{{user.customer.customer_residentPhone}}</td>
+    </tr>
+    <tr>
+        <th scope="row">Transportation</th>
+        <td>{{user.customer.customer_Transportation}}</td>
+    </tr>
+  </tbody>
+
+</table>
+{% endblock %}

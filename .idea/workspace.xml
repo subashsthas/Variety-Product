@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2bd41da7-6085-4f81-90b5-4d29da4fd0e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/media/shop/images/background/all.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/shop/images/budget.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/shop/images/chemistry.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/shop/images/copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/shop/images/shop picture/Screenshot_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/shop/images/shop picture/Screenshot_4_dFBidTC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/shop/images/shop picture/Screenshot_5_5zsR6Q5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/shop/images/terms_and_condition.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restapi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restapi/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restapi/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restapi/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restapi/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restapi/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restapi/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restapi/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/migrations/0008_auto_20200209_1035.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/307001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/307001_ijetXwv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/532559.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/532559_Aju4kmH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/532559_SJgBgy8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Journal_voucher.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Journal_voucher_PLTVEzw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/STATEMENT_OF_EXPENDITURE_ENGLISH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/STATEMENT_OF_EXPENDITURE_ENGLISH_LGlQAIj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Screenshot_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Screenshot_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Screenshot_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Screenshot_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Screenshot_5_TpSPpaA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Screenshot_5_bT8GIYC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Screenshot_5_cZu0GSx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/Screenshot_5_xSMZZfl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/bs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/practical-chem.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/practical-chem_LGSVWAv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/practical-chem_mxq9W3D.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/shop/images/practical-chem_t4q4O92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/main/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/main/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/main/accounts.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/main/accounts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/main/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/main/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/main/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/main/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/main/crud.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/main/crud.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/main/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/main/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/main/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/main/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/main/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/varietyproduct/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/varietyproduct/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/varietyproduct/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/varietyproduct/urls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Yy7lXPtWRQzOcQaQpmCDE5mbL2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bd41da7-6085-4f81-90b5-4d29da4fd0e7" name="Default Changelist" comment="" />
+      <created>1583903131601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583903131601</updated>
+      <workItem from="1608460223896" duration="91000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601622668231">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601622668231" />
+  </component>
+</project>

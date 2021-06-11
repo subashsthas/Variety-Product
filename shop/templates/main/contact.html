@@ -1,0 +1,41 @@
+{% extends 'main/header.html' %}
+{% block content %}
+{% load static %}
+<style>
+    body{
+        background-image: url({% static 'background/contact.jpg' %});
+        background-position:  center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+    }
+    .form-group form input{
+        width:98%;
+    }
+    .contact{
+        border-style: solid dashed solid double;
+	    background: #f0c391;
+    }
+
+    .form-group input{
+        border-radius: 15px;
+    }
+    label{
+        font-weight:900;
+    }
+</style>
+<title>Contact Us</title>
+<div class="form-group">
+    <div class="container col-md-3">
+        <div class="contact">
+            <h1 align="center">Contact Us</h1>
+            <hr>
+            <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <h5 align="center"><button type="submit" style="background-color: black; color: white">Submit</button></h5>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

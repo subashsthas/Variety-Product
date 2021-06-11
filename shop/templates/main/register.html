@@ -1,0 +1,45 @@
+{% extends 'main/header.html' %}
+{% block content %}
+{% load static %}
+<style>
+    body{
+        background-image: url({% static 'background/register.jpg' %});
+        background-position:  center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+    }
+    form ul,form span{
+        color: #808080;
+    }
+    .form-group form input{
+        width:98%;
+    }
+    .register{
+        border-style: solid dashed solid double;
+	    background:#f0c391;
+    }
+    .form-group input{
+        border-radius: 15px;
+    }
+    form{
+        padding-left: 9;
+    }
+    label{
+        font-weight:900;
+    }
+</style>
+<div class="form-group">
+    <div class="container col-md-3">
+        <div class="register">
+            <form method = "POST" >
+                <h1 align="center">Register</h1>
+                <hr>
+                {% csrf_token %}
+                {{form.as_p}}
+
+                <h5 align="center"><button type="submit" style="background-color: black; color: white " >Register</button></h5>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

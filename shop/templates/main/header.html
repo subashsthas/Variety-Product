@@ -1,0 +1,282 @@
+{% load static %}
+
+<head>
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+              integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/ico" href="{% static 'logo.jpg' %}" />
+    <style>
+        button a {
+            color:black;
+        }
+        .blue{
+            background-color:#87ceeb;
+            padding: 10px 20px;
+            font-size: large;
+        }
+        .nav{
+            float:right;
+        }
+        .nav li, .nav a {
+            color: black;
+            text-decoration: none;
+            padding-left: 30px;
+        }
+        .clr{
+            clear:both;
+        }
+        .nav li, .nav a{
+            color: black;
+            text-decoration: none;
+        }
+        .footer-section {
+            border-top: 3px solid #d82a4e;
+            padding-top: 50px;
+            background:#cccccc;
+        }
+        .footer-warp {
+            max-width: 1559px;
+            padding: 0 25px;
+        }
+        .widget-item {
+            width: 22%;
+            display: inline-block;
+        }
+        .widget-item h4 {
+            margin-bottom: 50px;
+        }
+        .widget-item ul {
+            list-style: none;
+            padding-top: 2px;
+        }
+        .widget-item ul li {
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 800
+            color: black;
+        }
+        .widget-item ul li:last-child {
+            margin-bottom: 0;
+        }
+        .widget-item ul a {
+            color: black;
+            text-decoration: none;
+        }
+        .widget-item ul.contact-list li {
+            margin-bottom: 27px;
+            position: relative;
+            padding-left: 10px;
+            padding-top: 0px;
+        }
+        .widget-item ul.contact-list li:last-child {
+            margin-bottom: 0;
+        }
+        .widget-item ul.contact-list li:after {
+            position: absolute;
+            content: "";
+            width: 8px;
+            height: 8px;
+            left: -5px;
+            top: 6px;
+            border-radius: 50%;
+            background: #d82a4e;
+        }
+        .footer-newslatter{
+            padding-right: 38px;
+        }
+        .footer-newslatter input[type=email] {
+            height: 55px;
+            width: 100%;
+            padding: 0 30px;
+            margin-bottom: 39px;
+            float: left;
+            border: none;
+            font-size: 14px;
+            background: #edf4f6;
+        }
+        .footer-newslatter .site-btn {
+            min-width: 150px;
+            margin-bottom: 25px;
+        }
+        .footer-bottom {
+            overflow: hidden;
+            background: #edf4f6;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .footer-menu {
+            list-style: none;
+            float: right;
+        }
+        .footer-menu li {
+            display: inline;
+        }
+        .footer-menu li:last-child a {
+            padding-right: 0;
+            margin-right: 0;
+        }
+        .footer-menu li:last-child a:after {
+            display: none;
+        }
+        .footer-menu li a {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #474747;
+            padding-right: 10px;
+            margin-right: 10px;
+            position: relative;
+        }
+        .footer-menu li a:after {
+            position: absolute;
+            content: "|";
+            right: 0;
+            top: 0;
+        }
+        .widget-item h4{
+            color: black;}
+    </style>
+</head>
+<body>
+    <div class="blue">
+        <b>Leading Product of Paper Based Stationary</b>
+        <ul class="nav" >
+              <li ><a><i class="material-icons left">local_phone</i>01-4243820</a></li>
+              {% if user.is_authenticated %}
+                  <li ><a  href="/account"><i class="material-icons left">person</i>{{user.username}}</a></li>
+                  <li ><a href="/logout"><i class="material-icons right">exit_to_app</i>Logout</a></li>
+              {% else %}
+                  <li ><a href="/login"><i class="material-icons left">exit_to_app</i>Login</a></li>
+                  <li><a href="/register"><i class="material-icons left">exit_to_app</i> Register</a></li>
+              {% endif %}
+        </ul>
+    </div>
+  <div class="clr"></div>
+  <br>
+    <div >
+        <a href="/" style="float:left; padding-left: 100px;"><img src="{% static 'logo.jpg' %}" alt="logo" height="100pt" width="200pt" ></a>
+        <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover"
+                data-placement="bottom" data-html="true" data-content="Vivamussagittis lacus vel augue laoreet rutrum faucibus."
+                style="float:right;">
+            {% if user.is_authenticated  %}
+                <a  href="/cart"><i class="material-icons right" style="padding-right:20px; font-size: 2rem; ">add_shopping_cart</i>(<span id="cart">0</span>)</a>
+                {% else %}
+                <a  href="/login"><i class="material-icons right" style="padding-right:20px; font-size: 2rem; ">add_shopping_cart</i>(<span id="cart">0</span>)</a>
+            {% endif %}
+        </button>
+        <form class="search-bar" style="float:right;" method="get" action="">
+            <input type="text" name="q" placeholder="search" value="{{query}}" >
+            <button class="btn btn-danger" type="submit">Search</button>
+        </form>
+    </div>
+    <br>
+    <div class="clr"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-1">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">All Categories</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Science</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Extra</a>
+                    </div>
+                </li>
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product_list">Admin</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+  {% block content %}
+  {% endblock %}
+<div style="padding-top:80px;">
+    <footer class="footer-section ">
+        <div class="footer-top">
+            <div class="footer-warp">
+                <div class="row">
+                    <div class="widget-item">
+                        <h4>Categories</h4>
+                        <ul class="contact-list">
+                            <li>Science</li>
+                            <li>Management</li>
+                            <li>Extra</li>
+                        </ul>
+                    </div>
+                    <div class="widget-item">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget-item">
+                        <h4>Get in Touch</h4>
+                        <ul>
+                            <li>Bhotahity, Kathmandu Nepal</li>
+                            <li>01-4243820</li>
+                            <li>9861590528</li>
+                            <li> rabindra16200@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="widget-item">
+                        <h4>Newsletter</h4>
+                        <form class="footer-newslatter">
+                            <input type="email" placeholder="E-mail">
+                            <button class="site-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div style="color: white; text-align: center; background-color: black; ">
+                    <b>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. </b>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script>
+        console.log('working');
+        if(localStorage.getItem('cart') == null){
+        var cart = {};
+        }
+        else
+        {
+        cart = JSON.parse(localStorage.getItem('cart'));
+        document.getElementById('cart').innerHTML = Object.keys(cart).length;
+        }
+        $('.cart').click(function(){
+        console.log('clicked');
+        var idstr = this.id.toString();
+        console.log(idstr);
+        if (cart[idstr] !=undefined){
+        cart[idstr] = cart[idstr] + 1;
+        }
+        else
+        {
+        cart[idstr] = 1;
+        }
+        console.log(cart);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        document.getElementById('cart').innerHTML = Object.keys(cart).length;
+        });
+
+        $('#popcart').popover();
+        document.getElementById("popcart").setAttribute('data-content', '<h5>Cart for your items in my shopping cart</h5>')
+    </script>
+</body>
